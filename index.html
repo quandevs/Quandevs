@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IndexBot – Khmer OCR</title>
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+</head>
+<body>
+  <header class="nav">
+    <div class="logo">
+      <img src="icon.svg" alt="IndexBot logo">
+      <span>IndexBot</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card upload">
+      <h2>Upload Image</h2>
+      <input type="file" id="imageInput" accept="image/*">
+      <img id="preview" alt="Preview">
+      <div class="actions">
+        <button id="clearBtn" class="secondary">Clear</button>
+        <button id="generateBtn" class="primary">Generate Text</button>
+      </div>
+    </section>
+
+    <section class="card result">
+      <h2>Khmer Text Result</h2>
+      <textarea id="output" placeholder="Khmer text will appear here..."></textarea>
+      <button id="copyBtn" class="secondary">Copy Text</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 IndexBot • Created by forxy</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
